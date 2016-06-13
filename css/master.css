@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 
 html{
 	min-height: 100vh;
@@ -12,13 +12,14 @@ h1,h2,h3{
 }
 
 h1{
+	font-weight: 300;
 	display: table;
 	margin: 0 auto;
 }
 
 body{
 	font-family: 'Roboto', sans-serif;
-	color: rgba(228,228,228,0.95);
+	color: rgba(248,248,248,0.95);
 }
 
 card{
@@ -66,10 +67,10 @@ input{
 	display: block;
 	border: none;
 	padding: 10px 0;
-	border-bottom: solid 1px rgba(82,128,137,1);
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 96%, rgba(82,128,137,1) 4%);
-	background: -o-linear-gradient(rgba(255, 255, 255, 0) 96%, rgba(82,128,137,1) 4%);
-	background: linear-gradient(rgba(255, 255, 255, 0) 96%, rgba(82,128,137,1) 4%);
+	border-bottom: solid 1px rgba(240,240,240,1);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 96%, rgba(240,240,240,1) 4%);
+	background: -o-linear-gradient(rgba(255, 255, 255, 0) 96%, rgba(240,240,240,1) 4%);
+	background: linear-gradient(rgba(255, 255, 255, 0) 96%, rgba(240,240,240,1) 4%);
 	-webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 	transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 	background-repeat: no-repeat;
