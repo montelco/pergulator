@@ -2,6 +2,15 @@ var calculator = new Vue({
 	el: '#calculator',
 	data: {
 		totalBrewedContent: 200,
+		requiredGrounds: 12,
+	},
+	methods: {
+		updateGrounds : function(){
+			this.$set('requiredGrounds', this.totalBrewedContent / (50/3))
+		},
+		updatedBrewed : function(){
+			this.$set('totalBrewedContent', this.requiredGround * (50/3))
+		}
 	},
 	computed: {
 		requiredGrounds: function(){
