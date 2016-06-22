@@ -2,21 +2,21 @@ var calculator = new Vue({
 	el: '#calculator',
 	data: {
 		totalBrewedContent: 200,
-		requiredGrounds: 12,
+		requiredGrounds: 12
 	},
 	methods: {
-		updateGrounds : function(){
-			this.$set('requiredGrounds', this.totalBrewedContent / (50/3))
+		updateGrounds: function () {
+			this.$set('requiredGrounds', this.totalBrewedContent/(50/3))
 		},
-		updatedBrewed : function(){
-			this.$set('totalBrewedContent', this.requiredGround * (50/3))
+		updateBrewed: function () {
+			this.$set('totalBrewedContent', this.requiredGrounds*(50/3))
 		}
 	},
 	computed: {
-		totalBrewTime: function(){
+		totalBrewTime: function () {
 			return this.requiredGrounds*10;
 		},
-		bpTime: function(){
+		bpTime: function () {
 			return this.totalBrewTime*(1/4);
 		},
 		mpTime: function(){
@@ -32,7 +32,7 @@ var calculator = new Vue({
 			return this.totalBrewedContent*(1/4);
 		},
 		tpWater: function(){
-			return this.totalBrewedContent*(1/2);
+  			return this.totalBrewedContent*(1/2);
 		}
 	}
 })
