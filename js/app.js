@@ -13,9 +13,6 @@ var calculator = new Vue({
 		}
 	},
 	computed: {
-		requiredGrounds: function(){
-			return this.totalBrewedContent/(50/3)
-		},
 		totalBrewTime: function(){
 			return this.requiredGrounds*10;
 		},
